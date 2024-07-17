@@ -1,0 +1,151 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.hover-opasity{
+    transition: opacity 0,5s;
+}
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+.clear{
+    clear: both;
+}
+/* start header css */
+
+.header{ 
+   position: fixed;
+   width: 100%;
+   z-index: 10;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.main-container .logo{
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+}
+.main-container .logo img{
+    width: 20%;
+    color: white;
+    margin-top: 10px;
+}
+
+.main-container .nav {
+    float: left;
+    width: 60%;
+    text-align: right;
+} 
+
+.main-container .nav > li{
+   list-style: none;
+   display: inline-block;
+} 
+.dropdwen{
+    position: relative;
+    display: inline-block;
+}
+.dropdwen-menu{
+    position: absolute;
+    background-color:rgb(120, 163, 255);
+    width: 120px;
+    padding: 10px 0;
+    text-align: center;
+    top: 75%;
+    left: -20%;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.dropdwen-menu  a{
+    text-decoration: none;
+    color: white;      
+}
+.dropdwen:hover .dropdwen-menu{
+    opacity: 1;
+    overflow: visible;
+}
+
+.main-container .nav > li > a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 23px 25px;
+} 
+.main-container .nav > li > a::after,
+.main-container .nav > li > a.activ::after{
+   content: "";
+    display: block;
+    height: 3px;
+    margin-top: 2px;
+    background-color:  rgb(120, 163, 255);
+    transition: width .5s;
+} 
+.main-container .nav > li > a::after{
+    width: 0;
+}
+.main-container .nav > li > a.activ::after{
+    width: 100%;
+}
+
+.main-container .nav > li > a:hover::after{
+    width: 100%;
+}
+
+/* end header css */
+ /* star content home pag  */
+ .home{
+    color: white;
+    background-image: url(../imges/background1.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+ }
+ .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+ }
+ .main-home{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    width: 70%;
+ }
+ .home .title{
+    font-size: 3rem;
+    text-transform: uppercase;
+ }
+ .home .home-desc{
+    margin: 10px 0px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+ }
+ .home .but{
+    min-width: 150px;
+    padding: 13px 0;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+ }
+.home .but-star{
+    background-color: white;
+    margin-right: 10px;
+ }
+ .home .but-learn{
+    background-color: rgb(120, 163, 255);
+    color: white;
+ }
+
+ /* end content home pag  */
